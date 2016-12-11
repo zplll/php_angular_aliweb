@@ -1,9 +1,12 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
-$servername = "rm-bp1hdphxcbppg623u.mysql.rds.aliyuncs.com";
-$username = "rxp92zte48";
-$password = "Zplll123";
-$dbname = "rxp92zte48";
+//获取数据库配置
+$dbconfig = parse_ini_file("dbconfig.ini");
+$servername = $dbconfig['servername'];
+$username = $dbconfig['username'];
+$password = $dbconfig['password'];
+$dbname = $dbconfig['dbname'];
+
 
 
 
